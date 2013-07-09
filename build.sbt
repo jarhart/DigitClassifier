@@ -11,3 +11,7 @@ libraryDependencies ++= Seq(
 
 scalacOptions ++= Seq("-unchecked", "-deprecation")
 
+mainClass in (Compile, packageBin) := Some("DigitClassifier")
+
+mainClass in (Compile, run) := Some("DigitClassifier")
+
